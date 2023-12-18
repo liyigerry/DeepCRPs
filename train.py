@@ -11,8 +11,6 @@ from util import ProteinDataset
 from sklearn.model_selection import KFold
 from torch_geometric.loader import DataLoader
 from evaluate_metrics import *
-from torch_geometric.explain import GNNExplainer
-from torch_geometric.explain import Explainer
 from torch.utils.data.dataset import Subset
 import matplotlib.pyplot as plt
 
