@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import random
-from models.gcn import GraphConv
+from models.gnn import GCN
 from tqdm import tqdm
 from torch.utils.tensorboard import SummaryWriter
 import prettytable as pt
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         best_rec = 0
         best_mcc = 0
 
-        model = GraphConv(1024, hidden_dim=128).to(device)
+        model = GCN(1024, hidden_dim=128).to(device)
         print(model)
         learning_rate = 0.004521
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
