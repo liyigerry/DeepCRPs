@@ -59,7 +59,7 @@ print('转换完成')
 train_id, train_affinity =  np.asarray(train_id), np.asarray(train_label)
 
 print('准备将数据转化为Pytorch格式')
-protein_train_data = ProteinDataset(root='data', dataset='train_data1057',
+protein_train_data = ProteinDataset(root='data', dataset='train_data1024',
                                     protein=train_id, protein_graph=train_drug_graph, affinity=train_affinity)
 
 print('数据转化为Pytorch格式完成')
