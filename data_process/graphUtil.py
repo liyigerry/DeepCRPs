@@ -123,7 +123,7 @@ def getProteinGraph(pdbid, is_train=True):
         x = datas[pdbid]
         p = x[count]
         p =list(p)
-        # p= [element for sublist in p for element in sublist]
+        # In this place select node features, One-hot, physicochemical features, SeqVec
         pho = VHSE[protein_letters_1to3[i]] + zScales[protein_letters_1to3[i]]
         feature = feature+pho+p
         count = count+1
